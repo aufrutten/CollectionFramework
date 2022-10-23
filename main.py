@@ -14,5 +14,5 @@ def counting_unique_characters(text: str) -> int:
 
 
 if __name__ == '__main__':
-    print(counting_unique_characters('abbbccdf'))
+    print(counting_unique_characters('abbbccdf'))  # pragma: no cover
 
