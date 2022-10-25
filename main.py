@@ -5,8 +5,7 @@ from functools import lru_cache
 @lru_cache(maxsize=None)
 def counting_unique_characters(text: str) -> int:
     if not isinstance(text, str):
-        raise TypeError(
-            'you wrote wrong type argument')
+        raise TypeError('you wrote wrong type argument')
     counter = Counter()
     for letter in text:
         counter[letter] += 1
@@ -14,5 +13,4 @@ def counting_unique_characters(text: str) -> int:
 
 
 if __name__ == '__main__':
-    print(counting_unique_characters('abbbccdf'))
-
+    print(counting_unique_characters('abbbccdf'))  # pragma: no cover
